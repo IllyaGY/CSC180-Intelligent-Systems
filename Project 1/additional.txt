@@ -1,0 +1,6 @@
+1. Added review_count column for the training/testing data, considering that can affect the business's star
+2. Used Z-score for review_count to abstract the data area
+3. Removed some columns in business data sets and review data sets to make more concise calculation
+4. Looped model training to jump out of local optimum using ModelCheckpoint
+5. We think Classification model would be better for prediction because the review stars go by multiplication of 0.5 (discrete value)
+--> we can categorize them as [very bad/bad/average/good/very good]
